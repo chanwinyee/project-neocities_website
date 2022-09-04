@@ -1,0 +1,146 @@
+/* Default fonts and background settings */
+@font-face {
+    font-family: 'LcHandwriting202204-Regular';
+    src: url('fonts/LcHandwriting202204-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('fonts/RobotoMono-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Snippet-regular';
+    src: url('fonts/Snippet-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Laila-Regular';
+    src: url('fonts/Laila-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'VT323-Regular';
+    src: url('fonts/VT323-Regular.ttf');
+}
+
+.defaultStyle {
+    background-color: rgb(153, 153, 187);
+    height: 100vh;
+    width: 100vw;
+    /* font-family: Snippet-regular; */
+    font-family: Laila-Regular;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 125%;
+}
+
+
+/* For the Index Page. This gives me more space at the top to center-ish the content */
+.index {
+    padding-top: 20%;
+}
+
+/* This is for the main body of each page to center it and make sure the text does not run off to the side */
+.mainbody {
+    /* height: 100vh; */
+    height: auto !important;
+    min-height: 100vh;
+    width: 40%;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 10%;
+    flex-wrap: wrap;
+    overflow-wrap: normal;
+    place-content: center;
+}
+
+/* This is for the left navigation bar */
+.lsidebar {
+    background-color: rgb(104, 104, 145);
+    font-family: 'LcHandwriting202204-Regular';
+    font-style: normal;
+    */ font-variant: small-caps;
+    /* font-stretch: condensed; */
+    font-size: 18px;
+    height: 100%;
+    /* Full-height: remove this if you want "auto" height */
+    width: 15%;
+    padding-top: 15%;
+    padding-left: 5%;
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    overflow-x: hidden;
+}
+
+.lsidebar a {
+    color: rgb(153, 153, 187);
+}
+
+/* This is for the Changelog. This page should have somewhat of a terminal/console feel to it. This will probably hurt if I move to a framework. hahaha ¯\_(ツ)_/¯  */
+.changelogdefault {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    font-family: VT323-Regular;
+    font-style: normal;
+    font-size: 22px;
+    color: chartreuse
+}
+
+.changeloglsidebar {
+    background-color: black;
+    font-family: LcHandwriting202204-Regular;
+    font-style: normal;
+    font-size: 18px;
+    height: 100%;
+    /* Full-height: remove this if you want "auto" height */
+    width: 15%;
+    padding-top: 15%;
+    padding-left: 5%;
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    overflow-x:
+        hidden;
+}
+
+/* This is a child selecter. Any a-tag of this class will apply the below settings. E.G.The 'a' below refers to hyperlink tags. So the below settings will only apply to the hyperlinks of the parent class. */
+.changeloglsidebar a {
+    color: skyblue;
+}
+
+.changelogdefault a {
+    color: skyblue;
+}
+
+.changelogmainbody {
+    height: auto !important;
+    min-height: 100vh;
+    width: 40%;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 10%;
+    flex-wrap: wrap;
+    overflow-wrap: normal;
+    place-content: center;
+}
+
+/* This is for tables */
+
+.tablestyle table,
+td,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px
+}
